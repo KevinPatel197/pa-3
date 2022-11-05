@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Add-Product</h2>
+
+    </div>
+    <div class="row">
+        <form [formGroup]="addProduct" novalidate class="form">
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    Product-Name
+                    <input type="text" formControlName="product_name" >
+                </div>
+               
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    Product-Price
+                    <input type="text" formControlName="product_price" >
+                </div>
+               
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    Product-Category
+                    <input type="text" formControlName="product_category" >
+                </div>
+               
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    Manufacturer
+                    <input type="text" formControlName="manufacturer" >
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-8">
+                    <button type="submit" (click)="onSubmit()">Submit Form</button>
+                </div>
+               
+            </div>
+        </form>
+    </div>
+
+    
+</div>

@@ -1,0 +1,38 @@
+<div>
+  <h2><a routerLink="/first">Display-Data</a></h2>
+  <h2><a routerLink="/second">Display-Array</a></h2>
+  <h2><a routerLink="/third">Display-Array-Combo</a></h2>
+  <h2><a routerLink="/forth">Display-Form</a></h2>
+</div>
+
+  <router-outlet>
+
+<style>
+  div
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+  a
+  {
+    text-decoration: none;
+    color: black
+  }
+  h2
+  {
+    padding: 30px;
+    border: 2px solid crimson;
+    width: 260px;
+    text-align: center;
+  }
+  h2:hover
+  {
+    background-color: crimson;
+    color: white;
+  }
+  h2:hover > a
+  {
+    color: white;
+  }
+
+</style>

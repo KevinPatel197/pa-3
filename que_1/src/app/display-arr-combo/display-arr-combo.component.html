@@ -1,0 +1,23 @@
+<h1>==>Combo Selection :- </h1>
+<h2>
+    <select [(ngModel)]="val">
+        <option *ngFor="let data of arr">
+            {{ data }}
+        </option>
+    </select>
+</h2>
+<h3 *ngIf="val == 'textbox'">
+    Enter Value :- <input type="text">
+</h3>
+<h3 *ngIf="val == 'textarea'">
+    Enter Text :- <textarea rows="10" cols="30"></textarea>
+</h3>
+
+<style>
+    select {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+</style>

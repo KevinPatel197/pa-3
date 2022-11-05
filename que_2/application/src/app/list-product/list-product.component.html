@@ -1,0 +1,38 @@
+<div class="row">    
+        <h2 class="col-md-12 text-center">Product List</h2>   
+</div>
+<div class="row">       
+   <table class="table table-striped" >
+        <thead >
+            <th>Product-Name</th>
+            <th>Product-Price</th>
+            <th>Manufacturer</th>
+            <th>Product-Category</th>
+            <th>Edit | Delete </th>
+          
+        </thead>
+        <tbody>
+                <tr *ngFor="let product of products">
+                    <td>
+                        {{product.product_name}}
+                    </td>
+                    <td>
+                        {{product.product_price}}
+                    </td>
+                    <td>
+                        {{product.manufacturer}}
+                    </td>
+                    <td>
+                        {{product.product_category}}
+                    </td>
+                    <td><a [routerLink]="['/edit-product',product._id]" class="btn btn-success">Edit</a>
+                         | <button (click)="ondelete(product)" class="btn btn-danger">Delete</button></td>
+                    <!-- <td><a [routerLink]="['/book/edit', student._id]" class="btn btn-primary">Edit</a></td> -->
+                    <!-- <td><a (click) = "deleteBook(book._id)"  class="btn btn-danger">Delete</a></td> -->
+                </tr>
+        </tbody>
+   </table>
+</div>
+
+
+
